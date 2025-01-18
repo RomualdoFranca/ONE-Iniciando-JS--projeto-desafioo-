@@ -1,5 +1,5 @@
 
-let userName ;
+/**let userName ;
 userName = prompt("What's your name?");
 alert("Welcome to the secret number game, " + userName);
 alert("Can you guess what number I'm thinking of right now?");
@@ -13,5 +13,7 @@ if (playersGuess == secretNumber) {
 
 } else {
     alert ("Sorry. That's not the number I was thinking of :(")
-}
+}*/
+
+
 
