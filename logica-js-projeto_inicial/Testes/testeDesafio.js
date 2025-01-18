@@ -15,5 +15,11 @@ if (playersGuess == secretNumber) {
     alert ("Sorry. That's not the number I was thinking of :(")
 }*/
 
+let numeroSecreto = Math.floor(Math.random() * 11);
+alert(numeroSecreto);
 
+const menorNumero = 1;
+const maiorNumero = 4;
+const numeroAleatorio = Math.floor(Math.random() * (maiorNumero - menorNumero + 1) + menorNumero);
+alert(`Numero aleatório entre 1 e 10:\n${numeroAleatorio}`);
 

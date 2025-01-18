@@ -20,3 +20,9 @@ alert(`Ola ${usuarioNome}. Você tem 100 ponto iniciais.\nO jogo tem 4 rodadas.\
 
 let pontosDoJogo = 100;
 let contadorDeRodadas = 0;
+
+//gera numeros inteiros aleatorio num intervao predefinido
+const menorNumero = 1;
+const maiorNumero = 4;
+const numeroAleatorio = Math.floor(Math.random() * (maiorNumero - menorNumero + 1) + menorNumero);
+alert(`Numero aleatório entre 1 e 10:\n${numeroAleatorio}`);
