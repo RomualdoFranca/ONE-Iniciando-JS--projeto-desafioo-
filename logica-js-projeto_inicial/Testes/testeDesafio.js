@@ -15,11 +15,34 @@ if (playersGuess == secretNumber) {
     alert ("Sorry. That's not the number I was thinking of :(")
 }*/
 
-let numeroSecreto = Math.floor(Math.random() * 11);
-alert(numeroSecreto);
+
+
 
 const menorNumero = 1;
 const maiorNumero = 4;
-const numeroAleatorio = Math.floor(Math.random() * (maiorNumero - menorNumero + 1) + menorNumero);
-alert(`Numero aleatório entre 1 e 10:\n${numeroAleatorio}`);
+//const numeroAleatorio = Math.floor(Math.random() * (maiorNumero - menorNumero + 1) + menorNumero);
+//alert(`Numero aleatório entre 1 e 10:\n${numeroAleatorio}`);
 
+/**const numeroAleatorio = Math.floor(Math.random() * (maiorNumero - menorNumero + 1) + menorNumero);
+for(let i = 1; i < 5; i++){
+    numeroAleatorio
+    alert(`Número aleatorio da ${i}° rodada: ${numeroAleatorio}`);
+}*/
+
+for (let i = 1; i < 5; i++) {
+
+    const menorNumero = 1;
+    const maiorNumero = 4;
+    const numeroAleatorio = Math.floor(Math.random() * (maiorNumero - menorNumero + 1) + menorNumero);
+    // mostra no console o numero aleatorio
+    console.log(numeroAleatorio);
+
+    let palpite = prompt(`${i}° Rodada\nDigite seu palpite: `);
+    if (numeroAleatorio == palpite) {
+        
+        alert('Parabéns. Acertou!');
+    } else {
+        alert('Que pena. Tente novamente para ganhar.');
+    }
+    
+}
