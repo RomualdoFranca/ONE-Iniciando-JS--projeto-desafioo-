@@ -32,22 +32,23 @@ for (let i = 1; i < 5; i++) {
     //gera numeros inteiros aleatorio num intervao predefinido
     const menorNumero = 1;
     const maiorNumero = 4;
-    const numeroAleatorio = Math.floor(Math.random() * (maiorNumero - menorNumero + 1) + menorNumero);
-    // mostra no console o numero aleatorio
-    console.log(numeroAleatorio);
+    const numeroSecreto = Math.floor(Math.random() * (maiorNumero - menorNumero + 1) + menorNumero);
+    // usando o console para depurar e testar o código
+    console.log(numeroSecreto);
 
     let palpite = prompt(`${i}° Rodada\nDigite seu palpite: `);
 
     // testa se o palpite é igual ao numero aleatorio
-    if (numeroAleatorio == palpite) {
+    if (numeroSecreto == palpite) {
 
         // soma 25 pontos para palpites corretos
         pontosDoJogo += 25;
-        alert(`Parabéns. Acertou!\nTotal de pontos: ${pontosDoJogo}`);
+        alert(`Parabéns. Acertou!\nTotal de pontos: ${pontosDoJogo}`); // template strings
     } else {
         // subtrai 25 pontos se o palpite for incorreto
         pontosDoJogo -= 25;
         alert(`Que pena. Você errou.\nTotal de pontos: ${pontosDoJogo}`);
+
     }
 
     // mostra o total de pontos e o resultado do jogo após a 4° rodada
