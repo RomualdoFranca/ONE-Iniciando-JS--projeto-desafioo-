@@ -29,7 +29,7 @@ for(let i = 1; i < 5; i++){
     alert(`Número aleatorio da ${i}° rodada: ${numeroAleatorio}`);
 }*/
 
-for (let i = 1; i < 5; i++) {
+/**for (let i = 1; i < 5; i++) {
 
     const menorNumero = 1;
     const maiorNumero = 4;
@@ -40,4 +40,6 @@ for (let i = 1; i < 5; i++) {
     let palpite = prompt(`${i}° Rodada\nDigite seu palpite: `);
     numeroAleatorio == palpite ? alert('Parabéns! Você acertou.') : alert('Que pena. Tente novamente para ganhar.');
 
-}
+}*/
+let numEntre1e10 = parseInt(Math.random() * 10 + 1);
+console.log(numEntre1e10);
