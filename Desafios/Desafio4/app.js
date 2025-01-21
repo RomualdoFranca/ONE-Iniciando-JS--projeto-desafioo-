@@ -36,3 +36,9 @@ let nome = "Romualdo França";
 console.log(nome);
 
 //Crie uma variável chamada "nome" e atribua a ela o seu nome. Em seguida, utilize o alert para exibir a mensagem "Olá, [seu nome]!" .
+let nomeAlert = "Puga Fedida";
+alert(nomeAlert);
+
+//Utilize o prompt e faça a seguinte pergunta: Qual a linguagem de programação que você mais gosta?. Em seguida, armazene a resposta em uma variável e mostre no console do navegador.
+let linguagemFavorita = prompt("Qual a linguagem de programação que você mais gosta?");
+console.log(linguagemFavorita);
