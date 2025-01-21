@@ -9,8 +9,9 @@ console.log('palpite do jogador ' + palpiteDoJogador);
 
 while(palpiteDoJogador !== numeroSecreto) {
     
-    palpiteDoJogador;
-    numeroDeJogadas++;
+    // numeroDeJogadas++;
+    // console.log(palpiteDoJogador);
+    
     // console.log('O while foi executado');
     
     
