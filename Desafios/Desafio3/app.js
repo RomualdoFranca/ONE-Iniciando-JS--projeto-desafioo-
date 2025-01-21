@@ -19,15 +19,10 @@ let inputUsuario = parseInt(prompt('Digite um número'));
 
 while(inputUsuario !== 0) {
 
-    if(inputUsuario > 0) {
-        console.log(inputUsuario);
-        inputUsuario--;
-
-    } else {
-        console.log(inputUsuario);
-        inputUsuario++;
-    }
+    // operador ternário
+    inputUsuario > 0 ? inputUsuario -- : inputUsuario ++;
+    console.log(inputUsuario);
 }
 
 
-// crie um prigrama de contagem progressiva. Peça um número e conte de 0 até esse núemro, usando um loop while do navegador
+// crie um programa de contagem progressiva. Peça um número e conte de 0 até esse número, usando um loop while do navegador

@@ -38,11 +38,6 @@ for (let i = 1; i < 5; i++) {
     console.log(numeroAleatorio);
 
     let palpite = prompt(`${i}° Rodada\nDigite seu palpite: `);
-    if (numeroAleatorio == palpite) {
-        
-        alert('Parabéns. Acertou!');
-    } else {
-        alert('Que pena. Tente novamente para ganhar.');
-    }
-    
+    numeroAleatorio == palpite ? alert('Parabéns! Você acertou.') : alert('Que pena. Tente novamente para ganhar.');
+
 }
