@@ -25,4 +25,5 @@ while(inputUsuario !== 0) {
 }
 
 
-// crie um programa de contagem progressiva. Peça um número e conte de 0 até esse número, usando um loop while do navegador
+// crie um programa de contagem progressiva. Peça um número e conte de 0 até esse número, usando um loop while do navegador 
+// quantidadePessoa == 1 ? palavraPessoa = "pessoa" : palavraPessoa = "pessoas";
