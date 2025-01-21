@@ -30,3 +30,9 @@ Use o Math.random para gerar um número inteiro entre 1 e 1000 e exiba esse núm
 //Crie um programa que utilize o console.log para exibir uma mensagem de boas-vindas.
 let mensagemBoasVindas = "Bem vindo ao programa ONE";
 console.log(mensagemBoasVindas);
+
+//Crie uma variável chamada "nome" e atribua a ela o seu nome. Em seguida, utilize o console.log para exibir a mensagem "Olá, [seu nome]!" no console do navegador.
+let nome = "Romualdo França";
+console.log(nome);
+
+//Crie uma variável chamada "nome" e atribua a ela o seu nome. Em seguida, utilize o alert para exibir a mensagem "Olá, [seu nome]!" .
