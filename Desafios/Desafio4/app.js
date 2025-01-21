@@ -56,3 +56,16 @@ let resultadoSubtracao = valorSubtracao1 - valorSubtracao2;
 console.log(`A diferença de ${valorSubtracao1} - ${valorSubtracao2} = ${resultadoSubtracao}`);
 
 //Peça ao usuário para inserir sua idade com prompt. Com base na idade inserida, utilize um if para verificar se a pessoa é maior ou menor de idade, exibindo uma mensagem apropriada no console.
+let inputIdade = prompt("Insira sua idade.");
+inputIdade >= 18 ? console.log("Você é maior de idade.") : console.log("Você é menor de idade.");
+
+//Crie uma variável "numero" e peça um valor com prompt verifique se é positivo, negativo ou zero. Use if-else para imprimir a respectiva mensagem.
+let numero = prompt("Insira um número.");
+console.log("Numero inserido = " + numero);
+if(numero == 0) {
+    console.log("O número inserido é ZERO.");
+
+} else {
+    numero > 0 ? console.log("O número inserido é positivo.") : console.log("O número inserido é negativo");
+    
+}
