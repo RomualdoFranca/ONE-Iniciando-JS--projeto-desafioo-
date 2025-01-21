@@ -4,16 +4,17 @@ let numeroSecreto = parseInt(Math.random() * multiplicador + 1);
 console.log('Numero secreto ' + numeroSecreto);
 let numeroDeJogadas = 0;
 
-let palpiteDoJogador = parseInt(prompt('Em que número estou pensando?'));
-console.log('palpite do jogador ' + palpiteDoJogador);
+let palpiteDoJogador; 
 
 while(palpiteDoJogador !== numeroSecreto) {
     
-    // numeroDeJogadas++;
-    // console.log(palpiteDoJogador);
-    
-    // console.log('O while foi executado');
-    
+    let entrada = prompt('Em que número estou pensando?');
+    palpiteDoJogador = parseInt(entrada);
+    numeroDeJogadas++;
+    console.log('While executado')
     
 }
-console.log('Numero de jogadas = ' + numeroDeJogadas);
+numeroDeJogadas == 1 ? console.log(`Parabéns. Você acertou em ${numeroDeJogadas} tentativa` ) :
+console.log(`Parabéns. Você acertou em ${numeroDeJogadas} tentativas` );
+
+
