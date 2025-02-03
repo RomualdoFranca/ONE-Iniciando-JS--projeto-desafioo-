@@ -1,3 +1,5 @@
+let listaNumerosSorteados = [];
+let numeroLimite = 10;
 let numeroSecreto = gerarNumeroAleatorio();
 let tentativas = 1;
 console.log(numeroSecreto);
@@ -5,6 +7,7 @@ console.log(numeroSecreto);
 function exibirTextoNaTela(tag, texto) {
     let campo = document.querySelector(tag);
     campo.innerHTML = texto;
+    responsiveVoice.speak(texto, 'Brazilian Portuguese Female', {rate:1.2});
 }
 
 function exibirMensagemInicial() {
@@ -13,7 +16,7 @@ function exibirMensagemInicial() {
 }
 
 // chamar a função fora de qualquer função para que ela iniciar quando for lido o app.js
-mensagemInicial();
+exibirMensagemInicial();
 
 function verificarChute() {
     let chute = document.querySelector('input').value;
@@ -53,7 +56,22 @@ function reiniciarJogo() {
 }
 
 function gerarNumeroAleatorio() {
-    return parseInt(Math.random() * 10 + 1);
+    let numeroEscolhido =  parseInt(Math.random() * numeroLimite + 1);
+    // uma variavel que contem a quantidade de elementos da lista
+    let quantidadeDeElementosNaLista = listaNumerosSorteados.length;
+
+    //verifica que se atingiu a quantidade máxima de elementos
+    if (quantidadeDeElementosNaLista == 3) {
+        listaNumerosSorteados = [];
+    }
+    if (listaNumerosSorteados.includes(numeroEscolhido)) {
+        // recursão: é quando uma função chama ela novamente. É uma função que chama uma própria função
+        return gerarNumeroAleatorio();
+    } else {
+        listaNumerosSorteados.push(numeroEscolhido); // o elemento é adicionado ao final da lista
+        console.log(listaNumerosSorteados);
+        return numeroEscolhido;
+    }
 }
 
 function limparCampo() {
